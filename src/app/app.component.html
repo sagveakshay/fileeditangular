@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="custom-file">
+
+    <input type="file" class="custom-file-input mt-2" id="customFile" name="myfile" accept=".xlsx, .xls, .csv"
+      (change)="onFileSelect($event)" #UploadFileInput>
+
+    <!-- <label class="custom-file-label" for="customFile">{{fileInputLabel || 'Choose File'}}</label> -->
+
+  </div>
+  <div class="col-6">
+
+    <button class="btn btn-primary mt-4" type="submit" data-bs-toggle="modal" data-bs-target="#popup"
+      (click)="onFormSubmit()">Upload</button>
+
+  </div>
+</div>
